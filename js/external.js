@@ -1,9 +1,8 @@
 console.log ("Hello from external javascript");
 alert("Welcome to my Website");
 var userInput = prompt('What\'s your favorite color?:');
-    console.log('Blue:' + userInput);
-console.log ("Great, Blue is my favorite color too!")
-alert("Great, Blue is my favorite color too!");
+    console.log(userInput);
+alert("Great, " + userInput + " is my favorite color too!");
 prompt('How many days they rent the little mermaid?')
 alert('For 3 days')
 prompt('How many days they rent for brother bear?')
