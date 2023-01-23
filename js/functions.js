@@ -68,6 +68,8 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
     function calculateTip(x,y){
+        var x = billTotal
+        var y = percentTip
         return (y*x);
 
 }
@@ -77,9 +79,15 @@ var random = Math.floor((Math.random() * 3) + 1);
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-    var tipAmount = prompt("How much is the total amount of the bill?")
-    console.log=tipAmount;
-    alert("20% = " + tipAmount*0.20 + "  18% = " + tipAmount*0.18 + "  15% = " + tipAmount*0.15)
+var billTotal = prompt("How much is your total amount of bill?")
+ console.log=billTotal;
+var percentTip = prompt ("How much percent do you want to put a tip? Please write in decimal point")
+console.log=percentTip;
+alert("Great " + calculateTip(billTotal,percentTip) + " is the amount of dollar you need to pay")
+
+
+
+
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
