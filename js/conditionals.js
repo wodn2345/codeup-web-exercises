@@ -56,21 +56,21 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-var colorName = prompt("What color is your favorite color?")
-
-switch(colorName) {
-    case "red":
-        return "red is the color of fire truck"
-      break;
-    case "blue":
-        return "Blue is the color of sea"
-        break;
-    case "green":
-        return "very good, green is the color of tree "
-        break;
-    default:
-        return "Hmm, I do not know about that color"
-}
+// var colorName = prompt("What color is your favorite color?")
+//
+// switch(colorName) {
+//     case "red":
+//         return "red is the color of fire truck"
+//       break;
+//     case "blue":
+//         return "Blue is the color of sea"
+//         break;
+//     case "green":
+//         return "very good, green is the color of tree "
+//         break;
+//     default:
+//         return "Hmm, I do not know about that color"
+// }
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
@@ -132,8 +132,10 @@ prompt("What is your lucky number ?");
 // Generate a random number between 0 and 6
 var luckyNumber = Math.floor(Math.random() * 6);
 
-var totalPrice = prompt("How much was your total bill?");
-calculateTotal(luckyNumber,totalPrice)
+
+var totalBill = prompt("How much was your total bill?");
+alert("your lucky number was " + luckyNumber + " and your total was $" + totalBill + "and you pay $" +
+calculateTotal(luckyNumber,totalBill) + " today!");
 
 
 /**
