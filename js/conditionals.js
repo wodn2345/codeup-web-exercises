@@ -22,22 +22,21 @@
  * console.logging the function's return value
  */
 
-// var favoriteColor = prompt("What is your favorite color?")
-//
-// function analyzeColor(favoriteColor) {
+// function analyzeColor(colorName) {
 //
 //
-//     if (favoriteColor === "red") {
-//     } else if (favoriteColor === "blue") {
-//         return("Blue is my second favorite color");
-//     } else if (favoriteColor === "green") {
-//         return("very good, i like green as well");
+//     if (colorName === "red") {
+//         return("red is the color of fire truck")
+//     } else if (colorName === "blue") {
+//         return("Blue is the color of sea");
+//     } else if (colorName === "green") {
+//         return("very good, green is the color of tree");
 //     } else {
 //         return("hmm, I do not know what those colors are");
 //     }
 // }
-// console.log(analyzeColor(favoriteColor))
-
+// console.log(analyzeColor(colorName))
+//
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -51,51 +50,37 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-//analyzeColor(randomColor);
-// console.log(analyzeColor(randomColor));
+//  console.log(analyzeColor(randomColor));
 
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-//var favoriteColor = prompt("What color is your favorite color?")
+var colorName = prompt("What color is your favorite color?")
 
-//switch(favoriteColor) {
-//    case "Red" :
-//        alert("That is my most favorite color as well!");
-//       break;
-//     case "Blue" :
-//         alert("Blue is my second favorite color! Great!");
-//         break;
-//     case "Green" :
-//         alert("Green is my least favorite color! ");
-//         break;
-//     default :
-//         alert(" Hmm, I do not know about that color");
-///         // break;
-//}
+switch(colorName) {
+    case "red":
+        return "red is the color of fire truck"
+      break;
+    case "blue":
+        return "Blue is the color of sea"
+        break;
+    case "green":
+        return "very good, green is the color of tree "
+        break;
+    default:
+        return "Hmm, I do not know about that color"
+}
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-function analyzeColor(color){
-    //switch(favoriteColor) {
-//    case "Red" :
-//        alert("That is my most favorite color as well!");
-//       break;
-//     case "Blue" :
-//         alert("Blue is my second favorite color! Great!");
-//         break;
-//     case "Green" :
-//         alert("Green is my least favorite color! ");
-//         break;
-//     default :
-//         alert(" Hmm, I do not know about that color");
-///         // break;
-//}
-}
+// let userColor = prompt("What is your favorite Color?");
+// alert(analyzeColor(userColor));
+
+
 /* ########################################################################## */
 
 /**
@@ -123,17 +108,17 @@ var totalPrice = 100;
 prompt("What is your lucky number ?");
     function calculateTotal(luckyNumber,totalPrice){
     if (luckyNumber === 0){
-        alert(totalPrice - (totalPrice * 0) + " is your after discounted price");
+        return(totalPrice - (totalPrice * 0) + " is your after discounted price");
     } else if (luckyNumber === 1){
-        alert(totalPrice - (totalPrice * 0.1) + " is your after discounted price");
+        return(totalPrice - (totalPrice * 0.1) + " is your after discounted price");
     } else if (luckyNumber === 2){
-        alert(totalPrice - (totalPrice * 0.25) + " is your after discounted price");
+        return(totalPrice - (totalPrice * 0.25) + " is your after discounted price");
     } else if (luckyNumber === 3){
-        alert(totalPrice - (totalPrice * 0.35) + " is your after discounted price");
+        return(totalPrice - (totalPrice * 0.35) + " is your after discounted price");
     } else if (luckyNumber === 4){
-        alert(totalPrice - (totalPrice * 0.5) + " is your after discounted price");
+        return(totalPrice - (totalPrice * 0.5) + " is your after discounted price");
     } else if (luckyNumber === 5){
-        alert(totalPrice - (totalPrice * 1) + " is your after discounted price");
+        return(totalPrice - (totalPrice * 1) + " is your after discounted price");
     }
 }
 /**
@@ -147,7 +132,8 @@ prompt("What is your lucky number ?");
 // Generate a random number between 0 and 6
 var luckyNumber = Math.floor(Math.random() * 6);
 
-var totalBill = prompt("How much was your total bill?");
+var totalPrice = prompt("How much was your total bill?");
+calculateTotal(luckyNumber,totalPrice)
 
 
 /**
@@ -171,11 +157,10 @@ var totalBill = prompt("How much was your total bill?");
 var enterNumber = confirm('Would you like to enter a number?');
 
 if (enterNumber) {
-    var numberChoice = prompt("which number would you put in?");
-        if(numberChoice%2 == 0);{
+    prompt("which number would you put in?");
+        if(enterNumber%2 === 0);{
         alert("Number is even");
-    }   if(numberChoice%2 ==1);{
+        } if (enterNumber)
         alert("Number is odd");
     }
 
-}
