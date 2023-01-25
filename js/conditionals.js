@@ -102,25 +102,25 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-var luckyNumber = Math.floor(Math.random() * 6);
-var totalPrice = 100;
-
-prompt("What is your lucky number ?");
-    function calculateTotal(luckyNumber,totalPrice){
-    if (luckyNumber === 0){
-        return(totalPrice - (totalPrice * 0) + " is your after discounted price");
-    } else if (luckyNumber === 1){
-        return(totalPrice - (totalPrice * 0.1) + " is your after discounted price");
-    } else if (luckyNumber === 2){
-        return(totalPrice - (totalPrice * 0.25) + " is your after discounted price");
-    } else if (luckyNumber === 3){
-        return(totalPrice - (totalPrice * 0.35) + " is your after discounted price");
-    } else if (luckyNumber === 4){
-        return(totalPrice - (totalPrice * 0.5) + " is your after discounted price");
-    } else if (luckyNumber === 5){
-        return(totalPrice - (totalPrice * 1) + " is your after discounted price");
-    }
-}
+// var luckyNumber = Math.floor(Math.random() * 6);
+// var totalPrice = 100;
+//
+// prompt("What is your lucky number ?");
+//     function calculateTotal(luckyNumber,totalPrice){
+//     if (luckyNumber === 0){
+//         return(totalPrice - (totalPrice * 0) + " is your after discounted price");
+//     } else if (luckyNumber === 1){
+//         return(totalPrice - (totalPrice * 0.1) + " is your after discounted price");
+//     } else if (luckyNumber === 2){
+//         return(totalPrice - (totalPrice * 0.25) + " is your after discounted price");
+//     } else if (luckyNumber === 3){
+//         return(totalPrice - (totalPrice * 0.35) + " is your after discounted price");
+//     } else if (luckyNumber === 4){
+//         return(totalPrice - (totalPrice * 0.5) + " is your after discounted price");
+//     } else if (luckyNumber === 5){
+//         return(totalPrice - (totalPrice * 1) + " is your after discounted price");
+//     }
+// }
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -130,12 +130,12 @@ prompt("What is your lucky number ?");
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-var luckyNumber = Math.floor(Math.random() * 6);
-
-
-var totalBill = prompt("How much was your total bill?");
-alert("your lucky number was " + luckyNumber + " and your total was $" + totalBill + "and you pay $" +
-calculateTotal(luckyNumber,totalBill) + " today!");
+// var luckyNumber = Math.floor(Math.random() * 6);
+//
+//
+// var totalBill = prompt("How much was your total bill?");
+// alert("your lucky number was " + luckyNumber + " and your total was $" + totalBill + "and you pay $" +
+// calculateTotal(luckyNumber,totalBill) + " today!");
 
 
 /**
@@ -159,10 +159,22 @@ calculateTotal(luckyNumber,totalBill) + " today!");
 var enterNumber = confirm('Would you like to enter a number?');
 
 if (enterNumber) {
-    prompt("which number would you put in?");
-        if(enterNumber%2 === 0);{
-        alert("Number is even");
-        } if (enterNumber)
-        alert("Number is odd");
+        alert("Good to process next step")
+
+        var userNumber = parseInt(prompt("What number would you put in?"));
+
+         if(isNaN(userNumber)){
+             alert("That is not number,")
+         } else {
+             alert("Okay is this " + userNumber + " correct? let's go to next pass");
+
+             var isEven = userNumber % 2 ===0;
+             var addOneHundred = userNumber + 100;
+             var isPositive = userNumber >= 0;
+
+             alert("It is " + isEven + " that your number is even.");
+             alert("Here is your number + 100 =  " + addOneHundred);
+             alert(userNumber + " is positive number ? That is " + isPositive)
+         }
     }
 
