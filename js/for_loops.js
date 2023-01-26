@@ -6,7 +6,7 @@
 //     i++;
 // }
 
-//Exercise 1
+//Exercise 2
 
 // function showMultiplicationTable(number) {
 //     var i = 1;
@@ -15,7 +15,7 @@
 //         i++;
 //     }
 // }
-//Exercise 2
+//Exercise 3
 //use for loop to get the random number between 20 and 200 and output to console whether
 //number is odd or even.
 
@@ -37,7 +37,7 @@
 // }
 // randomOddorEven();
 
-//Exercise 3
+//Exercise 4
 // creat for loop that uses console.log to creat the out put shown below.
 
 
@@ -62,3 +62,4 @@
 // for (let i = 0; i < 20; ++i) {
 //     console.log(100 -5 * i )
 // }
+
