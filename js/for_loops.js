@@ -40,23 +40,14 @@
 //Exercise 4
 // creat for loop that uses console.log to creat the out put shown below.
 
-
-// var i = 1;
-// function numberLine(a){
-//     return i * a
-// }
-//
-// for (; i < 10;) {
-//     console.log(i);
-//     i++;
-//     if(i===2) {
-//         console.log(i,i)
-//     } else if(i === 3) {
-//         console.log(i, i, i)
-//     } else if(i===4) {
-//         console.log(i,i,i,i)
+// for(var i=1, i<=9, i++) {
+//     var iString= '';
+//     for(var n=1; n<=i; n++) {
+//         iString += i;
 //     }
+//     console.log(iString);
 // }
+
 
 //Exercise 5
 // for (let i = 0; i < 20; ++i) {
