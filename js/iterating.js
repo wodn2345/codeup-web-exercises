@@ -56,11 +56,22 @@
     //  *  > second([1, 2, 3, 4, 5]) // returns 2
     //  *  > last([1, 2, 3, 4, 5]) // return 5
     //  */
-var numbers = [1, 2, 3, 4, 5]
-    console.log(numbers.length);
-    for (var i = 0; i<numbers.length; i++)
-        console.log( i + " number is " + i + ".")
+function first(array) {
+        return array[0]
 
-    console.log(First([1, 2, 3, 4, 5]))
+}
+    console.log(first(names))
+
+    function second(array){
+        return array[1]
+    }
+    console.log(second(names));
+
+    function last(array) {
+        return array[array.length - 1]
+
+    }   console.log(last(names));
+
 
 })();
+
