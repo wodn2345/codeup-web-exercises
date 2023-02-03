@@ -42,18 +42,18 @@
      * and console.log the relevant messages for each person
      */
 
-    var shoppers = [
-        {name: 'Cameron', amount: 180},
-        {name: 'Ryan', amount: 250},
-        {name: 'George', amount: 320}
-    ];
-        console.log(typeof shoppers);
-        console.log("The first shopper is a " + shoppers[0].name + " spent " + shoppers[0].amount + ".")
-        console.log("The second shopper is a " + shoppers[1].name + " spent " + shoppers[1].amount + ".")
-        console.log("The third shopper is a " + shoppers[2].name + " spent " + shoppers[2].amount + ".")
-    shoppers.forEach(function(shopper ){
-        console.log("The shopper " + shopper.name + " spent " + (shopper.amount - shopper.amount * 0.12) + " after 12% discount : " + shopper.amount * 0.12)
-    })
+    // var shoppers = [
+    //     {name: 'Cameron', amount: 180},
+    //     {name: 'Ryan', amount: 250},
+    //     {name: 'George', amount: 320}
+    // ];
+    //     console.log(typeof shoppers);
+    //     console.log("The first shopper is a " + shoppers[0].name + " spent " + shoppers[0].amount + ".")
+    //     console.log("The second shopper is a " + shoppers[1].name + " spent " + shoppers[1].amount + ".")
+    //     console.log("The third shopper is a " + shoppers[2].name + " spent " + shoppers[2].amount + ".")
+    // shoppers.forEach(function(shopper ){
+    //     console.log("The shopper " + shopper.name + " spent " + (shopper.amount - shopper.amount * 0.12) + " after 12% discount : " + shopper.amount * 0.12)
+    // })
 
 
     /** TODO:
@@ -68,7 +68,14 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+        var books = {};
+        console.log(typeof books)
 
+    books.title = "The Salmon of Doubt";
+        console.log(books.title)
+    books.author = {firstName: "Douglas", lastName: "Adam" };
+        console.log(books.author.firstName);
+        console.log(books.author.lastName)
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -93,7 +100,11 @@
      *      ---
      *      ...
      */
-
+    var books = [{Title:"The salmon of Doubt", Author:"Douglas Adams"}, {Title:"Walkaway", Author:"Cory Doctorow"}, {Title:"A Brief History of Time", Author:"Stephen Hawking"}]
+    // books["book1"] = {Title:"The salmon of Doubt", Author:"Douglas Adams"}
+    // books{"book2"] = {Title:"Walkaway", Author:"Cory Doctorow"}
+    // books{"book3"] = {Title:"A Brief History of Time", Author:"Stephen Hawking"}
+console.log(books)
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
