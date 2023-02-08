@@ -1,8 +1,49 @@
 h1 {
+    text-align:center;
+    text-decoration: underline;
     color:purple;
 }
 
 .fancy-header {
     color:blue;
     text-decoration:underline;
+}
+
+body {
+    background-color: lightpink;
+    font-style: italic;
+    }
+
+ul {
+    list-style:circle;
+}
+
+ol {
+    list-style: upper-roman;
+}
+
+table {
+    text-align: center;
+    padding: 5px;
+    font-size: 100%;
+}
+
+/* unvisited link (:link) */
+a:link {
+    color:red;
+}
+
+/* visited link (:visited) */
+a:visited {
+    color:black;
+}
+
+/* mouse hover over link (:hover) */
+a:hover {
+    color:blue;
+}
+
+/* active/selected link (:active) */
+a:active {
+    color:green;
 }
