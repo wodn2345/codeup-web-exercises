@@ -1,0 +1,23 @@
+
+/*li {
+    list-style-type: square;
+    color: red;
+    padding: .5em
+    border: 1px solid black;
+
+}
+*/
+.body {
+    color: rebeccapurple;
+}
+#heading{
+    background-color: red;
+    color: yellow;
+}
+
+#weather, li{
+    color: blue;
+    list-style-type: square;
+    padding: .5em
+    border: 1px solid black;
+}
