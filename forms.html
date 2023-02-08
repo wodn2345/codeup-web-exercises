@@ -2,21 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Register With Us</title>
 </head>
 <body>
+
+<h1>Register With Us</h1>
+
+<form method ="POST" action="https://requestinspector.com/inspect/azeban_cohort">
+
+
+</form>
+
+<label for="email">Email:</label>
+<input type="text" name="email" id="email"
+       placeholder = "enter your email">
+<br>
+<br>
+<label for="password">Password: </label>
+<input type="password" name="password" id="password"
+       placeholder="enter your password">
+<label for="bio"> Your Biography: </label>
+<textarea name="bio" id="bio" placeholder="Enter your biography here"> </textarea>
+
+<br>
+Radio button version
+<h3>How did you hear about us?</h3>
+<label for="Billboard"></label>
+<input type="checkbox" id="billboard" value="billboard" name="source">Billboard<br>
+
+<label for="radio"></label>
+<input type="checkbox" id="radio" value="radio advertisement" name="source">Radio advertisement<br>
+
+<label for="internet"></label>
+<input type="checkbox" id=internet" value="internet advertisement" name="source">Internet advertisement<br>
+
+<label for="other"></label>
+<input type="checkbox" id="other" value="other" name="source">Other<br>
+
+<button type="submit">Register</button>
+
+<h3>What is your web browser?</h3>
+
+<select name="browser"
+        <option value="explorer">Explorer</option>
+        <option value="firefox">Firefox</option>
+        <option value="chrome">Chrome</option>
+        <option value="opera">Opera</option>
+</select>
+<br>
+<button type="submit">Register</button>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+
 <form method="POST" action="https://request-inspector.glitch.me/">
 
-  <label for="username">Username</label>
-  <input id="username" name="username" type="text">
-  <br>
+    <input type="text" name="email" placeholder="Enter your email address">
+    <input type="password" name="password" placeholder="Enter your Password"><br>
+    <textarea name="bio"></textarea>
+<br>
+    <input name="newsletter_signup" value="true" type="checkbox" checked>Sign Up For The Email Newsletter
+<br>
+    How did you hear about us?<br>
+    A. billboard <input type="radio" name="quiz_question_1" value="a"><br>
+    B. radio advertisement <input type="radio" name="quiz_question_1" value="b"><br>
+    C. internet advertisement <input type="radio" name="quiz_question_1" value="c"><br>
+    D. other <input type="radio" name="quiz_question_1" value="d"><br>
 
-  <label for="password">Password</label>
-  <input id="password" name="password" type="password">
-  <br>
+    What web browser are you using ? <br>
+    <select name="Browser_preference">
+        <option value="C">Chrome</option>
+        <option value="F">Firefox</option>
+        <option value="Y">Yahoo</option>
+    </select>
+    <br>
+    <form>
+        <input name="the_answer" value="42">
+        <input type="submit">
+    </form>
 
-  <input type="submit">
-</form>
 
 
 </body>
