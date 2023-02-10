@@ -75,8 +75,7 @@ div.profile-header {
 }
 .container {
     position:relative;
-    left:2em;
-
+    top:30px;
 }
 li.nav-item, home {
     padding:1.5em;
@@ -98,16 +97,22 @@ li.nav-item, home {
     margin-bottom:.5em;
 }
 .timeline {
-    float:left;
+    position:relative;
     margin-top:.5em;
     margin-bottom:.5em;
-    width:50%;
+    width:30%;
     background-color: #FFFFFF;
+    float:left;
+    margin-left:400px;
+    margin-right:10px;
 }
 .who-to-follow{
-    width:25%;
+    width:15%;
     margin-top:.5em;
     margin-bottom:.5em;
+    margin-left:.5em;
+    margin-right:.5em;
+    float:left;
 }
 .media {
     width: 100%;
@@ -118,8 +123,12 @@ li.nav-item, home {
     overflow:auto;
 }
 .media-body {
-    float:left;
     width:100%;
+}
+p {
+    position:relative;
+    margin-left:50px;
+
 }
 .media-image {
     width:50px;
