@@ -90,6 +90,7 @@ li.nav-item, home {
 }
 .profile-form {
     float:right;
+    height:80px;
 }
 .profile-details{
     width:25%;
