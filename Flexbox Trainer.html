@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://jreich5-flexbox-trainer.glitch.me/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Trainer</title>
+    <link rel="stylesheet" href="./Flexbox Trainer_files/main.css">
+</head>
+<body>
+    <header class="container">
+        <h1>Welcome to Flexbox Trainer!</h1>
+        <button class="difficulty-btn" data-diff="basic">New Basic Problem</button>
+        <button class="difficulty-btn" data-diff="challenge">New Challenge Problem</button>
+        <p>Click on a level to generate a new problem.</p>
+        <p>Inspect the page to see a possible solution</p>
+        <p>Match the items on the left with the items on the right using the flexbox properties below.</p>
+        <p class="warning">WARNING: Sometimes a number of items in the answer container will not fit properly. When this is the case, simply generate a new problem. </p> 
+    </header>
+    <main class="container">
+        <section class="side-sections answer">
+            <div class="answer-container" style="display: flex; place-content: space-evenly; align-items: stretch; flex-flow: row nowrap;"><div class="item">Item 01</div><div class="item">Item 02</div><div class="item">Item 03</div></div>
+        </section>
+        <section class="side-sections user-output">
+            <div class="user-container" style=""><div class="item">Item 01</div><div class="item">Item 02</div><div class="item">Item 03</div></div>
+        </section>
+        <section class="user-input">
+            <label for="user-intput">Enter the attributes for the flex container:</label>
+            <textarea name="solution" id="user-input">property-here: value-here;</textarea>
+            <div id="item-textareas"></div>
+            <button id="try-it" class="try-it-btn">Try it!</button>
+        </section>
+        <section class="bottom">
+            <h2>Flexbox Properties Reference</h2>
+            <h3>Flex-container properties...</h3>
+            <section class="flex-container-reference">
+
+                <div class="flex-property-reference">
+                    <h4>justify-content:</h4>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>space-between</li>
+                        <li>space-around</li>
+                        <li>space-evenly</li>
+                    </ul>
+                </div>
+            
+                <div class="flex-property-reference">
+                    <h4>align-items:</h4>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>baseline</li>
+                        <li>stretch</li>
+                    </ul>
+                </div>
+    
+                <div class="flex-property-reference">
+                    <h4>align-content:</h4>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>space-between</li>
+                        <li>space-around</li>
+                        <li>space-evenly</li>
+                        <li>stretch</li>
+                    </ul>
+                </div>
+                
+                <div class="flex-property-reference">
+                    <h4>flex-direction:</h4>
+                    <ul>
+                        <li>row</li>
+                        <li>row-reverse</li>
+                        <li>column</li>
+                        <li>column-reverse</li>
+                    </ul>
+                </div>
+    
+                <div class="flex-property-reference">
+                    <h4>flex-wrap:</h4>
+                    <ul>
+                        <li>nowrap</li>
+                        <li>wrap</li>
+                        <li>wrap-reverse</li>
+                    </ul>
+                </div>
+                
+            </section>    
+
+            <h3>Flex-items properties...</h3>
+            <section class="flex-items-reference">
+    
+                <div class="flex-property-reference">
+                    <h4>align-self:</h4>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>baseline</li>
+                        <li>stretch</li>
+                    </ul>
+                </div>
+    
+                <div class="flex-property-reference">
+                    <h4>flex-basis: <small>any css width</small></h4>
+                    <h4>order: <small>any positive or negative number</small></h4>
+                    <h4>flex-shrink: <small>any positive number</small></h4>
+                    <h4>flex-grow: <small>any positive number</small></h4>
+                </div>
+            
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="./Flexbox Trainer_files/dom-to-image.js"></script>
+    <script src="./Flexbox Trainer_files/main.js"></script>
+
+</body></html>
