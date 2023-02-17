@@ -1,6 +1,7 @@
-.background {
-    background-image: url("https://java.codeup.com/examples/bootstrap/pizza.png");
+#jumbotron {
+    background-image: url("/img/pizza.png");
     height:346px;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 .nav-item {
@@ -13,4 +14,16 @@ button.btn-outline-success {
     margin-top:20px;
     background-image:url("https://java.codeup.com/examples/bootstrap/pizza.png");
     background-size:cover;
+}
+
+.lightbar {
+    padding-left: 7em;
+    padding-right: 7em;
+    font-size: xxx-large;
+    background-color: #FFF;
+    opacity: .8;
+}
+/*}*/
+#build {
+    padding-top: 1em;
 }
