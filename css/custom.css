@@ -1,5 +1,16 @@
 .background {
-    background-image: url("https://icons.getbootstrap.com/icons/person-fill/");
+    background-image: url("https://java.codeup.com/examples/bootstrap/pizza.png");
     height:346px;
     background-size: cover;
+}
+.nav-item {
+    margin-top:15px;
+}
+button.btn-outline-success {
+    width:350px;
+}
+.jumbotron {
+    margin-top:20px;
+    background-image:url("https://java.codeup.com/examples/bootstrap/pizza.png");
+    background-size:cover;
 }
