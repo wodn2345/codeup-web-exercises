@@ -22,6 +22,7 @@ button.btn-outline-success {
     font-size: xxx-large;
     background-color: #FFF;
     opacity: .8;
+    justify-content:center;
 }
 /*}*/
 #build {
