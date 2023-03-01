@@ -29,6 +29,11 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+
+<button id="btn1">Click Me!</button>
+<button id="btn2">Click 1</button>
+<button id="btn3">Click 2</button>
+<button id="btn4">Click 3</button>
 <script>
     (function() {
         "use strict";
@@ -54,7 +59,7 @@
         // TODO: Set text color on every other list item to grey
         for (var i = 0; i < listItems.length; i++) {
             if(i % 2 == 0){
-                listItems[1].style.color='grey'
+                listItems[i].style.color='grey'
             }
         }
         // TODO: Set text color of li with dbid = 1 to blue
@@ -63,6 +68,15 @@
                 var subParagraphs = document.getElementsByClassName('sub-paragraph')
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
                 subParagraphs[0].innerText="Mission accomplished"
+
+          var listener = function(event){
+            alert('you clicked the button');
+          }
+            var btn1= document.getElementById('btn1')
+        btn1.addEventListener('click', listener);
+
+            var btn2= document.getElementById('btn2')
+        btn2.addEventListener('click', listener)
     })();
 </script>
 </body>
