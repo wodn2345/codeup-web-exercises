@@ -16,7 +16,7 @@
         <p id="par2"> This is Exercise portion that i am working on. </p>
         <p> make all paragraph fontsize to 18px</p>
             <ul>
-                <li>this is first Table</li>
+                <li id="hovering">this is first Table</li>
             </ul>
     <div class="codeup">
         This is another one
@@ -28,6 +28,12 @@
      });
      $('#par2').dblclick(function(){
          $('#par2').css({fontSize:"18px"})
+     });
+     $('#hovering').hover(function() {
+         $('#hovering').css({backgroundColor: '#FF0'});
+     },
+         function(){
+         $('#hovering').css({backgroundColor:'#FFF'});
      });
     </script>
 
