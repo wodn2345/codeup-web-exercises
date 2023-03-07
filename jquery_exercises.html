@@ -22,10 +22,11 @@
     </div>
 
     <script>
-        $('.codeup').css({"border-weight": "1px","border-color":"red", "border-style":"solid"});
+        $('codeup').css({"border-weight": "1px","border-color":"red", "border-style":"solid"});
+        var jContents = $('#codeup').html();
+        alert(jContents);
 
-
-
+        $('#codeup').css({'backgroundColor':"red"});
     </script>
 
 <script type="text/javascript" src="js/jquery.js"/>
