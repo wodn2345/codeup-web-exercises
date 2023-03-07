@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="codeup">
-    <h1>Hello JQeury Exercise</h1>
+    <h1 id="codeup">Hello JQeury Exercise</h1>
     </div>
     <div>
     <h2 id="codeup">this is another header</h2>
@@ -22,11 +22,9 @@
     </div>
 
     <script>
-        $('codeup').css({"border-weight": "1px","border-color":"red", "border-style":"solid"});
-        var jContents = $('#codeup').html();
-        alert(jContents);
-
-        $('#codeup').css({'backgroundColor':"red"});
+     $('#codeup').click(function(){
+         $('#codeup').css({backgroundColor:"red"})
+     });
     </script>
 
 <script type="text/javascript" src="js/jquery.js"/>
