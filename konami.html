@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+<p>Please type something into this form:</p>
+  <form>
+    <input type="text" id="textfield" name="textfield" placeholder="Type Here"/>
+  </form>
+
+<script src="/js/jquery.js"></script>
+<script>
+  "use strict";
+
+  $('#textfield').keydown(function() {
+    alert('A key was pushed down!');
+  });
+
+
+
+  $(document).keyup(function(event){
+    console.log(event.keyCode);
+  });
+</script>
+</body>
+</html>
