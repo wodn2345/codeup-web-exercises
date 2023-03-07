@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>JQeury exercise</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="codeup">
     <h1>Hello JQeury Exercise</h1>
     </div>
-    <div class="codeup">
-    <h2>this is another header</h2>
+    <div>
+    <h2 id="codeup">this is another header</h2>
     </div>
         <p> This is Exercise portion that i am working on. </p>
             <ul>
@@ -18,19 +20,17 @@
     <div class="codeup">
         This is another one
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
     <script>
-        $(function(){
-            alert("Dom loaded")
-        })
-        $('.li').css('20px solid grey');
+        $('.codeup').css({"border-weight": "1px","border-color":"red", "border-style":"solid"});
 
 
 
     </script>
 
 <script type="text/javascript" src="js/jquery.js"/>
+
+
 <script type="text/javascript" src="js/my-custom-javascript.js"/>
 </body>
 </html>
