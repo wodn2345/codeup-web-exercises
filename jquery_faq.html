@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>[j] [Q] [u] [e] [r] [y] ~ essential ~ methods</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    main {
+      display: flex;
+    }
+
+    div {
+      margin: 24px;
+    }
+
+
+    #footer{
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+    }
+
+    #footer > ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      list-style: none;
+      border: 1px solid black;
+      border-radius: 100%;
+      margin: 12px;
+
+    }
+
+
+    #footer > ul > li {
+      border: 1px dashed red;
+      margin: 24px;
+      padding: 12px;
+    }
+
+    .highlight {
+      background-color: yellow;
+    }
+
+    .bigFont {
+      font-size: 100px;
+    }
+
+    .bigBorder {
+      border: 24px solid hotpink;
+    }
+
+  </style>
+</head>
+<body>
+
+<h1>[j] [Q] [u] [e] [r] [y] ~ essential ~ methods</h1>
+
+<main id="content">
+
+  <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam at debitis dolorum enim, et explicabo facilis incidunt iste laboriosam molestias odit provident quos recusandae rerum sunt veniam voluptate voluptates!</div>
+
+  <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque commodi delectus dolore doloremque dolores enim, fugiat in incidunt inventore itaque iure natus nesciunt nihil omnis quibusdam quis quod vero.</div>
+
+  <div class="paragraph">
+    <span id="firstSpan">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+
+    <span id="secondSpan">Culpa dolores ducimus facilis libero nostrum officia sequi voluptates?</span>
+
+    <span>Alias corporis eos ex fugiat, illo minima nostrum officiis porro, possimus quam voluptates.</span>
+  </div>
+
+  <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi cum cupiditate debitis ea eligendi excepturi, fugiat id incidunt molestiae nulla quas quos sint velit voluptatem? Facere magnam perferendis similique.</div>
+
+</main>
+
+<footer id="footer">
+  <h3 id="national-parks-heading">National Parks </h3>
+    <ul id="national-parks">
+      <li>Denali national park</li>
+      <li>katmai national park</li>
+    </ul>
+  <h3>Arizona National park</h3>
+    <ul id="national-parks">
+      <li>Grand Canyon National park</li>
+      <li>saguaro national park</li>
+    </ul>
+  <h3>Arkansas National park</h3>
+    <ul id="national-parks">
+      <li>Hot springs national park</li>
+    </ul>
+
+</footer>
+
+<button id="myBtn">Click me to change last li in each ul to yellow back ground</button>
+<button id="myBtn2">Click me to make font-weight: bold</button>
+<button id="myBtn3">Click me to highlight the paragraphs!</button>
+<!--jQuery CDN below-->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+
+<!--<script src="js/jQueryEssMethodsAttr.js"></script>-->
+
+<script>
+  $(this).children().last().css("background-color", "yellow")
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
