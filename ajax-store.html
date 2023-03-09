@@ -20,7 +20,7 @@
 </table>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-
+<button type="button">Refresh</button>
 <script>
 (function() {
     "use strict";
@@ -37,14 +37,23 @@
     //             its contents and fields
     $.get("data/inventory.json").done(function(data){
         let insertProducts = "";
-        data.forEach(function(inventor){
-            insertProducts += "Title: " + inventor.title + " "
-            insertProducts += "Quantity : " + inventor.quantity + ". "
-            insertProducts += "categories: " + inventor.categories.toString() + ". ";
+        data.forEach(function(inventory){
+            insertProducts += '<tr>' + '<td>' + "Title: " + inventory.title + ". " + '</td>'
+            insertProducts += '<td>' + "Quantity : " + inventory.quantity + ". " + '</td>'
+            insertProducts += '<td>' + "price : " + inventory.price + ". " + '</td>'
+            insertProducts += '<td>' + "categories: " + inventory.categories.toString() + ". " + '</td>' + '</tr>'
         })
         $("#insertProducts").append(insertProducts)
     })
-    //       HINT: You will want to target #insertProducts for your new HTML elements
+
+
+    $(document).ready(function () {
+        $("button").click(function () {
+            location.reload(true);
+        });
+    });
+    //       HINT: You will{
+    //       want to target #insertProducts for your new HTML elements
 })();
 </script>
 
