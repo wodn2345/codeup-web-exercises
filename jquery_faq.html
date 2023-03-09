@@ -113,10 +113,21 @@
 <!--<script src="js/jQueryEssMethodsAttr.js"></script>-->
 
 <script>
-  $(this).children().last().css("background-color", "yellow")
+  $('#myBtn').click(function(){
+    $('ul').each(function(){
+      $(this).children().last().css("background-color","yellow")
+    })
+  });
 
+  $('h3').click(function(){
+    $('li').css('font-weight', 'bold');
+  })
 
-
+  $('li').click(function() {
+    $('ul').each(function() {
+      $('ul').children().first().css('color', '#003cff')
+    })
+  });
 
 
 
