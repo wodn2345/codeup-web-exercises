@@ -30,11 +30,20 @@
             type: "GET"
 
         }).done(function(data){
-            console.log(data)
+            console.log("is it working?")
         })
     // TODO: Take the data from inventory.json and append it to the products table
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
+    $.get("data/inventory.json").done(function(data){
+        let insertProducts = "";
+        data.forEach(function(inventor){
+            insertProducts += "Title: " + inventor.title + " "
+            insertProducts += "Quantity : " + inventor.quantity + ". "
+            insertProducts += "categories: " + inventor.categories.toString() + ". ";
+        })
+        $("#insertProducts").append(insertProducts)
+    })
     //       HINT: You will want to target #insertProducts for your new HTML elements
 })();
 </script>
