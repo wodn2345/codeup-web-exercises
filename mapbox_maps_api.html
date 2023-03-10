@@ -21,6 +21,9 @@
 
 <div id='map'</div>
 <script src="js/mapbox-geocoder-utils.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+
 
 <script>
   let myToken ="pk.eyJ1IjoiaG93ZWxsa2VuIiwiYSI6ImNsZjJzYTNiazBsYnAzeXBqZjdrZW96djMifQ.otX7RJGm05Flb7kye7wgvw";
@@ -45,11 +48,9 @@
   myMarker.addTo(map);
 
   let myPopup = new mapboxgl.Popup();
-  myPopup.setLngLat([-96.710655,33.020923])
-  myPopup.setHTML("<span>The Boiling Crab Plano</span>")
-  myPopup.addTo(map);
-
-
+        myPopup.setLngLat([-96.710655,33.020923])
+        myPopup.setHTML("<span>The Boiling Crab Plano</span>")
+        myPopup.addTo(map);
 
 
 
