@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Map Project</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+<header>
+  <h4 class="container ">Weather App</h4>
+</header>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="js/keys.js"></script>
+
+
+<script>
+    $.get("http://api.openweathermap.org/data/2.5/weather", {
+        APPID: OPEN_WEATHER_APPID,
+        lat:    29.423017,
+        lon:   -98.48527,
+        units: "imperial"
+    }).done(function(data){
+        console.log('The entire response:', data);
+        console.log('Diving in - here is current information: ', data.current);
+        console.log('A step further - information for tomorrow: ', data.daily);
+    })
+
+
+
+
+
+
+</script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+
+</body>
+</html>
