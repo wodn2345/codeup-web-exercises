@@ -47,12 +47,12 @@
 }
 
 .image{
-    height:140px;
+    height:100px;
     width: 100%;
 }
 
 .imgClass{
-    height:140px;
+    height:100px;
     width: 100%;
 }
 
@@ -61,6 +61,16 @@
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
+}
+
+.descripValue{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    heigt:25px;
+    width:170px;
+    margin:-10px;
+    margin-left: 5px;
 }
 
 .minValues{
@@ -84,6 +94,29 @@
     margin-bottom: 5px;
     margin-left: 5px;
 }
+
+.windValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    heigt:25px;
+    width:85px;
+    margin:0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.humidValue{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    heigt:25px;
+    width:85px;
+    margin:0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
 
 #map {
     border: 3px solid black;

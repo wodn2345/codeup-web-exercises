@@ -8,48 +8,64 @@
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="css/weather_project.css">
 </head>
+<center>
 <body onload="DefaultScreen()">
      <h3 id="Para1"> Weather App</h3>
         <p id="inputContainer">City: <input type="text" id="cityInput"></p>
         <button type="button" onclick="GetInfo()">Find</button>
         <h4 id="cityName">--Dallas--</h4>
-
+</center>
 
     <div id="weatherContainer">
         <div id="iconsContainer">
             <div class="icons">
                 <p class="weather" id="day1"></p>
-                <div class="image"><img src="dots.img" class=" imgClass" id="img1" alt=""></div>
+                <p class="descripValue" id="day1Des">loading....</p>
+                <div class="image"><img src="img/01d.png.crdownload" class=" imgClass" id="img1" alt=""></div>
                 <p class="minValues" id="day1Min">loading....</p>
                 <p class="maxValues" id="day1Max">loading....</p>
+                <p class="windValues" id="day1Wind">loading....</p>
+                <p class="humidValue" id="day1Humid">loading....</p>
             </div>
             <div class="icons">
                 <p class="weather" id="day2"></p>
-                <div class="image"><img src="dots.img" class=" imgClass" id="img2" alt=""></div>
+                <p class="descripValue" id="day2Des">loading....</p>
+                <div class="image"><img src="img/01d.png.crdownload" class=" imgClass" id="img2" alt=""></div>
                 <p class="minValues" id="day2Min">loading....</p>
                 <p class="maxValues" id="day2Max">loading....</p>
+                <p class="windValues" id="day2Wind">loading....</p>
+                <p class="humidValue" id="day2Humid">loading....</p>
             </div>
             <div class="icons">
                 <p class="weather" id="day3"></p>
-                <div class="image"><img src="dots.img" class=" imgClass" id="img3" alt=""></div>
+                <p class="descripValue" id="day3Des">loading....</p>
+                <div class="image"><img src="img/01d.png.crdownload" class=" imgClass" id="img3" alt=""></div>
                 <p class="minValues" id="day3Min">loading....</p>
                 <p class="maxValues" id="day3Max">loading....</p>
+                <p class="windValues" id="day3Wind">loading....</p>
+                <p class="humidValue" id="day3Humid">loading....</p>
             </div>
             <div class="icons">
                 <p class="weather" id="day4"></p>
-                <div class="image"><img src="dots.img" class=" imgClass" id="img4" alt=""></div>
+                <p class="descripValue" id="day4Des">loading....</p>
+                <div class="image"><img src="img/01d.png.crdownload" class=" imgClass" id="img4" alt=""></div>
                 <p class="minValues" id="day4Min">loading....</p>
                 <p class="maxValues" id="day4Max">loading....</p>
+                <p class="windValues" id="day4Wind">loading....</p>
+                <p class="humidValue" id="day4Humid">loading....</p>
             </div>
             <div class="icons">
                 <p class="weather" id="day5"></p>
-                <div class="image"><img src="dots.img" class=" imgClass" id="img5" alt=""></div>
+                <p class="descripValue" id="day5Des">loading....</p>
+                <div class="image"><img src="img/01d.png.crdownload" class=" imgClass" id="img5" alt=""></div>
                 <p class="minValues" id="day5Min">loading....</p>
                 <p class="maxValues" id="day5Max">loading....</p>
+                <p class="windValues" id="day5Wind">loading....</p>
+                <p class="humidValue" id="day5Humid">loading....</p>
             </div>
         </div>
     </div>
-    <div id="map"</div>
+    <div id="map"></div>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="js/keys.js"></script>
 <script src="js/mapbox-geocoder-utils.js"></script>
@@ -57,20 +73,13 @@
 <script>
 
 
-    let myToken ="pk.eyJ1IjoiaG93ZWxsa2VuIiwiYSI6ImNsZjJzYTNiazBsYnAzeXBqZjdrZW96djMifQ.otX7RJGm05Flb7kye7wgvw";
-    mapboxgl.accessToken =myToken;
-    const map = new mapboxgl.Map({
-        container: 'map', // container ID
-        style: 'mapbox://styles/mapbox/streets-v12', // style URL
-        center: [-74.5, 40], // starting position [lng, lat]
-        zoom: 4, // starting zoom
-    });
 
-    var marker= new mapboxgl.Marker({
-        draggable:true
-    })
-        .setLngLat([-74.5, 40])
-        .addTo(map);
+
+    // geocode("3964 state hwy 121, Lewisville, TX 75056", myToken).then(function(results){
+    //     console.log("Geocode result")
+    //     console.log(results)
+    // })
+
 
 </script>
 
