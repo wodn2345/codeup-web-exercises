@@ -4,9 +4,10 @@
     font-family: 'segoe UI', tahoma, geneva, Verdanam sans-serif;
 }
 
-#cityInput, #cityName, #inputContainer, {
-    margin:3px;
-    padding: 5px;
+#cityInput, #cityName, #inputContainer {
+    display:inline-block;
+    margin:10px;
+    padding: 10px;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
